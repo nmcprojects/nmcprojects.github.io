@@ -1,0 +1,846 @@
+ <!-- Song profile -->
+ <div class="song-detail" style="display:block">
+    <div class="song-detail-top">
+        <div class="song-detail-top_img">
+            <div class="song-detail-top_img-hover">
+                <div class="song-detail-top_img-hover--wrap">
+                    <i class="fas fa-play" onclick="fecthData('http:/localhost:8080/Music_Web/api/', 'A%20Time%20For%20Us')"></i>
+                </div>
+            </div>
+            <img src="./assets/image/Darling.jpeg" alt="">
+        </div>
+        <div class="song-detail-top_content">
+            <div class="song-detail-top_content-owner">
+                <div class="song-detail-top_content-owner_img">
+                    <img src="./assets/image/imageAvatar.jpg" alt="">
+                </div>
+                <div class="song-detail-top_content-owner_info">
+                    <h3>Baby boy, VN</h3>
+                    <div>
+                        <span class="song-detail-top_content-owner_info--amount-songs">04 songs</span>
+                        <i class="fas fa-circle"></i>
+                        <span class="song-detail-top_content-owner_info--amount-friends">07 friends</span>
+                    </div>
+                </div>
+            </div>
+            <div class="song-detail-top_content-info">
+                <h3 class="song-detail-top_content-info--name-song">Always-Remember-Us-This-Way Always-Remember-Us-This-Way</h3>
+                <h3 class="song-detail-top_content-info--name-singer">Lady Gaga, US</h3>
+                <p class="song-detail-top_content-info--release">Release date: <span>22/11/2001</span></p>
+            </div>
+            <div class="song-detail-top_content-btn">
+                <div class="song-detail-top_content-btn-item song-detail-top_content-btn--play">
+                    <i class="fas fa-music"></i>
+                    <p>play song</p>
+                </div>
+                <div class="song-detail-top_content-btn-item song-detail-top_content-btn--download">
+                    <i class="fas fa-cloud-download-alt"></i>
+                    <p>download song</p>
+                </div>
+            </div>
+            <div class="song-detail-top_content-others">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fas fa-envelope"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-instagram-square"></i>
+            </div>
+        </div>
+    </div>
+    <div class="song-detail-center">
+        <div class="song-detail-center-left">
+            <div class="song-detail-center_figure">
+                <div class="song-detail-center_figure-item">
+                    <div class="song-detail-center_figure-item-icon">
+                        <img src="./assets/image/figure_song/times_listen.png" alt="">
+                    </div>
+                    <div class="song-detail-center_figure-item-value">
+                        04 views
+                    </div>
+                    <div class="song-detail-center_figure-item-name">
+                        Number of times Listening
+                    </div>
+                </div>
+                <div class="song-detail-center_figure-item">
+                    <div class="song-detail-center_figure-item-icon">
+                        <img src="./assets/image/figure_song/like.png" alt="">
+                    </div>
+                    <div class="song-detail-center_figure-item-value">
+                        07 likes
+                    </div>
+                    <div class="song-detail-center_figure-item-name">
+                        Number of likes
+                    </div>
+                </div>
+                <div class="song-detail-center_figure-item">
+                    <div class="song-detail-center_figure-item-icon">
+                        <img src="./assets/image/figure_song/comments.png" alt="">
+                    </div>
+                    <div class="song-detail-center_figure-item-value">
+                        2001 comments
+                    </div>
+                    <div class="song-detail-center_figure-item-name">
+                        Number of comments
+                    </div>
+                </div>
+            </div>
+            <div class="song-detail-center_lyric">
+                <div class="song-detail-center_lyric-top">
+                    Lyrics song
+                </div>
+                <div class="song-detail-center_lyric-center">
+                    <div class="lyricer"></div>
+                </div>
+                <div active='false' class="song-detail-center_lyric-bottom song-detail-center_lyric--see-more song-detail-center_lyric--see-more">
+                    <div class="song-detail-center_lyric--see-more-down">
+                        <i class="fas fa-chevron-down"></i>
+                        <p>See more</p>
+                    </div>
+                    <div class="song-detail-center_lyric--see-more-up">
+                        <i class="fas fa-chevron-up"></i>
+                        <p>See less</p>
+                    </div>
+                </div>
+            </div>
+            <div class="song-detail-center_comment">
+                <div class="song-detail-center_comment-top">
+                    Comment
+                </div>
+                <div class="song-detail-center_comment-center">
+                    <div class="comment">
+                        <div class="write-comment write-comment--default">
+                            <div class="write-comment_img">
+                                <img src="./assets/comment/img/imageAvatar.jpg" alt="avatar">
+                            </div>
+                            <div class="write-comment_content">
+                                <div class="write-comment_content-top">
+                                    <textarea name="comment" id="comment" rows="1" placeholder="Give me your comment"></textarea>
+                                </div>
+                                <div class="write-comment_content-bottom">
+                                    <div class="write-comment_content-bottom-slogan">
+                                        Hear it. See it. Live it.&#128149;
+                                    </div>
+                                    <div class="write-comment_content-bottom-btn">
+                                        <div class="write-comment_content-bottom-btn-item" name='cancel'>
+                                            Cancel
+                                        </div>
+                                        <div class="write-comment_content-bottom-btn-item" name='comment'>
+                                            Comment
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-comments">
+                            <div class="view-comment">
+                                <div class="view-comment-img">
+                                    <img src="./assets/comment/img/imageAvatar.jpg" alt="">
+                                </div>
+                                <div class="view-comment-content">
+                                    <div class="view-comment-content_content">
+                                        <div class="view-comment-content_content-name">
+                                            Nguyễn Mạnh Cường
+                                        </div>
+                                        <div class="view-comment-content_content-main">
+                                            Cố gắng thêm chức năng đi bạn
+                                        </div>
+                                        <div class="view-comment-reactions">
+                                            <div class="view-comment-reactions_icon">
+                                            </div>
+                                            <div class="view-comment-reactions_num">
+                                                22
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="view-comment-content_btn">
+                                        <span class="view-comment-content_btn-item" name='liked'>Like</span>
+                                        <span class="view-comment-content_btn--dot">.</span>
+                                        <span class="view-comment-content_btn-item" name='reply'>Reply</span>
+                                        <span class="view-comment-content_btn--dot">.</span>
+                                        <span class="view-comment-content_btn-time"> several seconds ago</span>
+                                        <span class="view-comment-content_btn--dot view-comment-content_btn--last-dot">.</span>
+                                        <div class="view-comment-content_btn-btn">
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </div>
+                                        <div class="view-comment-content_feature" value='me'>
+                                            <div class="view-comment-content_feature--for-me-cmt">
+                                                <div class="view-comment-content_feature-item">
+                                                    <i class="fas fa-pencil-alt"></i>
+                                                    <span>Modify comment</span>
+                                                </div>
+                                                <div class="view-comment-content_feature-item">
+                                                    <i class="fas fa-trash"></i>
+                                                    <span>Delete comment</span>
+                                                </div>
+                                            </div>
+                                            <div class="view-comment-content_feature--for-other-cmt">
+                                                <div class="view-comment-content_feature-item">
+                                                    <i class="fas fa-flag"></i>
+                                                    <span>Comment report</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="view-comment-content_reply-cmt">
+                                        <div class="write-comment write-comment--reply">
+                                            <div class="write-comment_img">
+                                                <img src="./assets/comment/img/imageAvatar.jpg" alt="avatar">
+                                            </div>
+                                            <div class="write-comment_content">
+                                                <div class="write-comment_content-top">
+                                                    <textarea name="comment" id="comment" rows="1" placeholder="Give me your comment"></textarea>
+                                                </div>
+                                                <div class="write-comment_content-bottom">
+                                                    <div class="write-comment_content-bottom-slogan">
+                                                        Hear it. See it. Live it.&#128149;
+                                                    </div>
+                                                    <div class="write-comment_content-bottom-btn">
+                                                        <div class="write-comment_content-bottom-btn-item" name='cancel'>
+                                                            Cancel
+                                                        </div>
+                                                        <div class="write-comment_content-bottom-btn-item" name='comment'>
+                                                            Comment
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="view-comment-content_see-more" value='none'>
+                                        <div class="view-comment-content_see-more-common view-comment-content_see-more-open">
+                                            <p>View all replies</p>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <div class="view-comment-content_see-more-common view-comment-content_see-more-close">
+                                            <p>Hide answer</p>
+                                            <i class="fas fa-chevron-up"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view-comment">
+                                <div class="view-comment-img">
+                                    <img src="./assets/comment/img/Darling.jpeg" alt="">
+                                </div>
+                                <div class="view-comment-content">
+                                    <div class="view-comment-content_content">
+                                        <div class="view-comment-content_content-name">
+                                            Vũ Thu Trang
+                                        </div>
+                                        <div class="view-comment-content_content-main">
+                                            Hát hay quá anh yêu của em ơi. &#128150;
+                                            Cho em hỏi sao nó không mở bài 13 mà nó mởi bài 14 15. Trong khi em làm hết vẫn không mở bài 16 ạ 
+                                        </div>
+                                        <div class="view-comment-reactions">
+                                            <div class="view-comment-reactions_icon">
+                                            </div>
+                                            <div class="view-comment-reactions_num">
+                                                4
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="view-comment-content_btn">
+                                        <span class="view-comment-content_btn-item" name='liked'>Like</span>
+                                        <span class="view-comment-content_btn--dot">.</span>
+                                        <span class="view-comment-content_btn-item" name='reply'>Reply</span>
+                                        <span class="view-comment-content_btn--dot">.</span>
+                                        <span class="view-comment-content_btn-time">07 minutes ago</span>
+                                        <span class="view-comment-content_btn--dot view-comment-content_btn--last-dot">.</span>
+                                        <div class="view-comment-content_btn-btn">
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </div>
+                                        <div class="view-comment-content_feature" value='other'>
+                                            <div class="view-comment-content_feature--for-me-cmt">
+                                                <div class="view-comment-content_feature-item">
+                                                    <i class="fas fa-pencil-alt"></i>
+                                                    <span>Modify comment</span>
+                                                </div>
+                                                <div class="view-comment-content_feature-item">
+                                                    <i class="fas fa-trash"></i>
+                                                    <span>Delete comment</span>
+                                                </div>
+                                            </div>
+                                            <div class="view-comment-content_feature--for-other-cmt">
+                                                <div class="view-comment-content_feature-item">
+                                                    <i class="fas fa-flag"></i>
+                                                    <span>Comment report</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="view-comment-content_reply-cmt">
+                                        <div class="write-comment write-comment--reply">
+                                            <div class="write-comment_img">
+                                                <img src="./assets/comment/img/imageAvatar.jpg" alt="avatar">
+                                            </div>
+                                            <div class="write-comment_content">
+                                                <div class="write-comment_content-top">
+                                                    <textarea name="comment" id="comment" rows="1" placeholder="Give me your comment"></textarea>
+                                                </div>
+                                                <div class="write-comment_content-bottom">
+                                                    <div class="write-comment_content-bottom-slogan">
+                                                        Hear it. See it. Live it.&#128149;
+                                                    </div>
+                                                    <div class="write-comment_content-bottom-btn">
+                                                        <div class="write-comment_content-bottom-btn-item" name='cancel'>
+                                                            Cancel
+                                                        </div>
+                                                        <div class="write-comment_content-bottom-btn-item" name='comment'>
+                                                            Comment
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="view-comment-content_see-more" value='close'>
+                                        <div class="view-comment-content_see-more-common view-comment-content_see-more-open">
+                                            <p>View all replies</p>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <div class="view-comment-content_see-more-common view-comment-content_see-more-close">
+                                            <p>Hide answer</p>
+                                            <i class="fas fa-chevron-up"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view-comment-rely-wrap">
+                                <div class="view-comment view-comment--reply">
+                                    <div class="view-comment-img">
+                                        <img src="./assets/comment/img/Don-t-Let-Me-Down-cover-by-JFla.jpg" alt="">
+                                    </div>
+                                    <div class="view-comment-content">
+                                        <div class="view-comment-content_content">
+                                            <div class="view-comment-content_content-name">
+                                                JFla, Korean.
+                                            </div>
+                                            <div class="view-comment-content_content-main">
+                                                Vũ Thu Trang: Bạn phải yêu anh ấy rất nhiều vào nha.
+                                            </div>
+                                        </div>
+                                        <div class="view-comment-content_btn">
+                                            <span class="view-comment-content_btn-item" name='like'>Like</span>
+                                            <span class="view-comment-content_btn--dot">.</span>
+                                            <span class="view-comment-content_btn-item" name='reply'>Reply</span>
+                                            <span class="view-comment-content_btn--dot">.</span>
+                                            <span class="view-comment-content_btn-time">22 days ago</span>
+                                            <span class="view-comment-content_btn--dot view-comment-content_btn--last-dot">.</span>
+                                            <div class="view-comment-content_btn-btn">
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </div>
+                                            <div class="view-comment-content_feature" value='other'>
+                                                <div class="view-comment-content_feature--for-me-cmt">
+                                                    <div class="view-comment-content_feature-item">
+                                                        <i class="fas fa-pencil-alt"></i>
+                                                        <span>Modify comment</span>
+                                                    </div>
+                                                    <div class="view-comment-content_feature-item">
+                                                        <i class="fas fa-trash"></i>
+                                                        <span>Delete comment</span>
+                                                    </div>
+                                                </div>
+                                                <div class="view-comment-content_feature--for-other-cmt">
+                                                    <div class="view-comment-content_feature-item">
+                                                        <i class="fas fa-flag"></i>
+                                                        <span>Comment report</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="view-comment-content_see-more" value='none'>
+                                        <div class="view-comment-content_see-more-common view-comment-content_see-more-open">
+                                            <p>View all replies</p>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <div class="view-comment-content_see-more-common view-comment-content_see-more-close">
+                                            <p>Hide answer</p>
+                                            <i class="fas fa-chevron-up"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="view-comment view-comment--reply">
+                                    <div class="view-comment-img">
+                                        <img src="./assets/comment/img/LetMeDownSlowly.jpg" alt="">
+                                    </div>
+                                    <div class="view-comment-content">
+                                        <div class="view-comment-content_content">
+                                            <div class="view-comment-content_content-name">
+                                                Jack Ma, China.
+                                            </div>
+                                            <div class="view-comment-content_content-main">
+                                                Do you want to be entrepreneur? Don’t stop when you’re tired. Stop when you’re done.
+                                                Wake up with determination. Go to bed with satisfaction.
+                                                Do something today that your future self will thank you for.
+                                            </div>
+                                        </div>
+                                        <div class="view-comment-content_btn">
+                                            <span class="view-comment-content_btn-item" name='like'>Like</span>
+                                            <span class="view-comment-content_btn--dot">.</span>
+                                            <span class="view-comment-content_btn-item" name='reply'>Reply</span>
+                                            <span class="view-comment-content_btn--dot">.</span>
+                                            <span class="view-comment-content_btn-time">11 seconds ago</span>
+                                            <span class="view-comment-content_btn--dot view-comment-content_btn--last-dot">.</span>
+                                            <div class="view-comment-content_btn-btn">
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </div>
+                                            <div class="view-comment-content_feature" value='other'>
+                                                <div class="view-comment-content_feature--for-me-cmt">
+                                                    <div class="view-comment-content_feature-item">
+                                                        <i class="fas fa-pencil-alt"></i>
+                                                        <span>Modify comment</span>
+                                                    </div>
+                                                    <div class="view-comment-content_feature-item">
+                                                        <i class="fas fa-trash"></i>
+                                                        <span>Delete comment</span>
+                                                    </div>
+                                                </div>
+                                                <div class="view-comment-content_feature--for-other-cmt">
+                                                    <div class="view-comment-content_feature-item">
+                                                        <i class="fas fa-flag"></i>
+                                                        <span>Comment report</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="view-comment-content_see-more" value='none'>
+                                        <div class="view-comment-content_see-more-common view-comment-content_see-more-open">
+                                            <p>View all replies</p>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <div class="view-comment-content_see-more-common view-comment-content_see-more-close">
+                                            <p>Hide answer</p>
+                                            <i class="fas fa-chevron-up"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view-comment">
+                                <div class="view-comment-img">
+                                    <img src="./assets/comment/img/Always-Remember-Us-This-Way.jpg" alt="">
+                                </div>
+                                <div class="view-comment-content">
+                                    <div class="view-comment-content_content">
+                                        <div class="view-comment-content_content-name">
+                                            Lady Gaga, US
+                                        </div>
+                                        <div class="view-comment-content_content-main">
+                                            Cường hát hay thế. &#128536;&#128536;
+                                        </div>
+                                    </div>
+                                    <div class="view-comment-content_btn">
+                                        <span class="view-comment-content_btn-item" name='like'>Like</span>
+                                        <span class="view-comment-content_btn--dot">.</span>
+                                        <span class="view-comment-content_btn-item" name='reply'>Reply</span>
+                                        <span class="view-comment-content_btn--dot">.</span>
+                                        <span class="view-comment-content_btn-time">04 hours ago</span>
+                                        <span class="view-comment-content_btn--dot view-comment-content_btn--last-dot">.</span>
+                                        <div class="view-comment-content_btn-btn">
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </div>
+                                        <div class="view-comment-content_feature" value='other'>
+                                            <div class="view-comment-content_feature--for-me-cmt">
+                                                <div class="view-comment-content_feature-item">
+                                                    <i class="fas fa-pencil-alt"></i>
+                                                    <span>Modify comment</span>
+                                                </div>
+                                                <div class="view-comment-content_feature-item">
+                                                    <i class="fas fa-trash"></i>
+                                                    <span>Delete comment</span>
+                                                </div>
+                                            </div>
+                                            <div class="view-comment-content_feature--for-other-cmt">
+                                                <div class="view-comment-content_feature-item">
+                                                    <i class="fas fa-flag"></i>
+                                                    <span>Comment report</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="view-comment-content_see-more" value='none'>
+                                    <div class="view-comment-content_see-more-common view-comment-content_see-more-open">
+                                        <p>View all replies</p>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="view-comment-content_see-more-common view-comment-content_see-more-close">
+                                        <p>Hide answer</p>
+                                        <i class="fas fa-chevron-up"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view-comment">
+                                <div class="view-comment-img">
+                                    <img src="./assets/comment/img/Don-t-Let-Me-Down-cover-by-JFla.jpg" alt="">
+                                </div>
+                                <div class="view-comment-content">
+                                    <div class="view-comment-content_content">
+                                        <div class="view-comment-content_content-name">
+                                            JFla, Korean.
+                                        </div>
+                                        <div class="view-comment-content_content-main">
+                                            Hát hay gần bằng chị r nha em. ơi!. &#129321;
+                                        </div>
+                                    </div>
+                                    <div class="view-comment-content_btn">
+                                        <span class="view-comment-content_btn-item" name='like'>Like</span>
+                                        <span class="view-comment-content_btn--dot">.</span>
+                                        <span class="view-comment-content_btn-item" name='reply'>Reply</span>
+                                        <span class="view-comment-content_btn--dot">.</span>
+                                        <span class="view-comment-content_btn-time">11 minutes ago</span>
+                                        <span class="view-comment-content_btn--dot view-comment-content_btn--last-dot">.</span>
+                                        <div class="view-comment-content_btn-btn">
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </div>
+                                        <div class="view-comment-content_feature" value='other'>
+                                            <div class="view-comment-content_feature--for-me-cmt">
+                                                <div class="view-comment-content_feature-item">
+                                                    <i class="fas fa-pencil-alt"></i>
+                                                    <span>Modify comment</span>
+                                                </div>
+                                                <div class="view-comment-content_feature-item">
+                                                    <i class="fas fa-trash"></i>
+                                                    <span>Delete comment</span>
+                                                </div>
+                                            </div>
+                                            <div class="view-comment-content_feature--for-other-cmt">
+                                                <div class="view-comment-content_feature-item">
+                                                    <i class="fas fa-flag"></i>
+                                                    <span>Comment report</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="view-comment-content_see-more" value='close'>
+                                        <div class="view-comment-content_see-more-common view-comment-content_see-more-open">
+                                            <p>View all replies</p>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <div class="view-comment-content_see-more-common view-comment-content_see-more-close">
+                                            <p>Hide answer</p>
+                                            <i class="fas fa-chevron-up"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view-comment-rely-wrap">
+                                <div class="view-comment-rely">
+                                    <div class="view-comment view-comment--reply">
+                                        <div class="view-comment-img">
+                                            <img src="./assets/comment/img/Take-me-to-your-heart.jpg" alt="">
+                                        </div>
+                                        <div class="view-comment-content">
+                                            <div class="view-comment-content_content">
+                                                <div class="view-comment-content_content-name">
+                                                    Bill Gates, US
+                                                </div>
+                                                <div class="view-comment-content_content-main">
+                                                    I'll give you a advice: “Don't compare yourself with anyone in this world… if you do so, you are insulting yourself"
+                                                </div>
+                                            </div>
+                                            <div class="view-comment-content_btn">
+                                                <span class="view-comment-content_btn-item" name='like'>Like</span>
+                                                <span class="view-comment-content_btn--dot">.</span>
+                                                <span class="view-comment-content_btn-item" name='reply'>Reply</span>
+                                                <span class="view-comment-content_btn--dot">.</span>
+                                                <span class="view-comment-content_btn-time">1 seconds ago</span>
+                                                <span class="view-comment-content_btn--dot view-comment-content_btn--last-dot">.</span>
+                                                <div class="view-comment-content_btn-btn">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                </div>
+                                                <div class="view-comment-content_feature" value='other'>
+                                                    <div class="view-comment-content_feature--for-me-cmt">
+                                                        <div class="view-comment-content_feature-item">
+                                                            <i class="fas fa-pencil-alt"></i>
+                                                            <span>Modify comment</span>
+                                                        </div>
+                                                        <div class="view-comment-content_feature-item">
+                                                            <i class="fas fa-trash"></i>
+                                                            <span>Delete comment</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="view-comment-content_feature--for-other-cmt">
+                                                        <div class="view-comment-content_feature-item">
+                                                            <i class="fas fa-flag"></i>
+                                                            <span>Comment report</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="view-comment-content_see-more" value='none'>
+                                            <div class="view-comment-content_see-more-common view-comment-content_see-more-open">
+                                                <p>View all replies</p>
+                                                <i class="fas fa-chevron-down"></i>
+                                            </div>
+                                            <div class="view-comment-content_see-more-common view-comment-content_see-more-close">
+                                                <p>Hide answer</p>
+                                                <i class="fas fa-chevron-up"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="song-detail-center_comment-bottom">
+                    <div active='false' class="song-detail-center_lyric-bottom song-detail-center_lyric--see-more song-detail-center_lyric--see-more">
+                        <div class="song-detail-center_lyric--see-more-down">
+                            <i class="fas fa-chevron-down"></i>
+                            <p>See more</p>
+                        </div>
+                        <div class="song-detail-center_lyric--see-more-up">
+                            <i class="fas fa-chevron-up"></i>
+                            <p>See less</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="song-detail-center-right">
+            <div class="gird">
+                <div class="row">
+                    <div class="col l-12 c-12 m-12">
+                        <div class="list-songs_list-item list-songs_list-item--downloaded" data-mouseOver=true>
+                            <div class="list-songs_list-item_img">
+                                <div class="list-songs_list-item_img--hover">
+                                    <i class="list-songs_list-item_img--hover-play fas fa-play"></i>
+                                    <div class="list-songs_list-item_img--hover_mode">
+                                        <div class="list-songs_list-item_img--hover_mode-item">
+                                            <div class="thumb-up">
+                                                <i class="far fa-thumbs-up"></i>
+                                                <span class="thumb-up_amount">21</span>
+                                            </div>
+                                        </div>
+                                        <div class="list-songs_list-item_img--hover_mode-item">
+                                            <i class="list-songs_list-item_img--hover_mode-item--download fas fa-download"></i>
+                                            <i class="list-songs_list-item_img--hover_mode-item--heart far fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <i class="list-songs_list-item_img--hover-see-more fas fa-ellipsis-h">
+                                        <div class="tooltip tooltip--bottom">Edit</div>
+                                    </i>
+                                </div>
+                                <img src="./assets/audio/img/Don-t-Let-Me-Down-cover-by-JFla.jpg" alt="">
+                            </div>
+                            <div class="list-songs_list-item_info">
+                                <div class="list-songs_list-item_info-name">
+                                    <h3>Always remember us</h3>
+                                </div>
+                                <div class="list-songs_list-item_info-singer">
+                                    <h3>Lady Gaga, American</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-12 c-12 m-12">
+                        <div class="list-songs_list-item list-songs_list-item--downloaded" data-mouseOver=true>
+                            <div class="list-songs_list-item_img">
+                                <div class="list-songs_list-item_img--hover">
+                                    <i class="list-songs_list-item_img--hover-play fas fa-play"></i>
+                                    <div class="list-songs_list-item_img--hover_mode">
+                                        <div class="list-songs_list-item_img--hover_mode-item">
+                                            <div class="thumb-up">
+                                                <i class="far fa-thumbs-up"></i>
+                                                <span class="thumb-up_amount">21</span>
+                                            </div>
+                                        </div>
+                                        <div class="list-songs_list-item_img--hover_mode-item">
+                                            <i class="list-songs_list-item_img--hover_mode-item--download fas fa-download"></i>
+                                            <i class="list-songs_list-item_img--hover_mode-item--heart far fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <i class="list-songs_list-item_img--hover-see-more fas fa-ellipsis-h">
+                                        <div class="tooltip tooltip--bottom">Edit</div>
+                                    </i>
+                                </div>
+                                <img src="./assets/audio/img/Let-Me-Down-Slowly-cover-by-JFla.jpg" alt="">
+                            </div>
+                            <div class="list-songs_list-item_info">
+                                <div class="list-songs_list-item_info-name">
+                                    <h3 >Always remember </h3>
+                                </div>
+                                <div class="list-songs_list-item_info-singer">
+                                    <h3>Lady Gaga, American</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-12 c-12 m-12">
+                        <div class="list-songs_list-item list-songs_list-item--downloaded" data-mouseOver=true>
+                            <div class="list-songs_list-item_img">
+                                <div class="list-songs_list-item_img--hover">
+                                    <i class="list-songs_list-item_img--hover-play fas fa-play"></i>
+                                    <div class="list-songs_list-item_img--hover_mode">
+                                        <div class="list-songs_list-item_img--hover_mode-item">
+                                            <div class="thumb-up">
+                                                <i class="far fa-thumbs-up"></i>
+                                                <span class="thumb-up_amount">21</span>
+                                            </div>
+                                        </div>
+                                        <div class="list-songs_list-item_img--hover_mode-item">
+                                            <i class="list-songs_list-item_img--hover_mode-item--download fas fa-download"></i>
+                                            <i class="list-songs_list-item_img--hover_mode-item--heart far fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <i class="list-songs_list-item_img--hover-see-more fas fa-ellipsis-h">
+                                        <div class="tooltip tooltip--bottom">Edit</div>
+                                    </i>
+                                </div>
+                                <img src="./assets/audio/img/Don-t-Let-Me-Down-cover-by-JFla.jpg" alt="">
+                            </div>
+                            <div class="list-songs_list-item_info">
+                                <div class="list-songs_list-item_info-name">
+                                    <h3 >Always remember us this way</h3>
+                                </div>
+                                <div class="list-songs_list-item_info-singer">
+                                    <h3>Lady Gaga, American</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-12 c-12 m-12">
+                        <div class="list-songs_list-item list-songs_list-item--downloaded" data-mouseOver=true>
+                            <div class="list-songs_list-item_img">
+                                <div class="list-songs_list-item_img--hover">
+                                    <i class="list-songs_list-item_img--hover-play fas fa-play"></i>
+                                    <div class="list-songs_list-item_img--hover_mode">
+                                        <div class="list-songs_list-item_img--hover_mode-item">
+                                            <div class="thumb-up">
+                                                <i class="far fa-thumbs-up"></i>
+                                                <span class="thumb-up_amount">21</span>
+                                            </div>
+                                        </div>
+                                        <div class="list-songs_list-item_img--hover_mode-item">
+                                            <i class="list-songs_list-item_img--hover_mode-item--download fas fa-download"></i>
+                                            <i class="list-songs_list-item_img--hover_mode-item--heart far fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <i class="list-songs_list-item_img--hover-see-more fas fa-ellipsis-h">
+                                        <div class="tooltip tooltip--bottom">Edit</div>
+                                    </i>
+                                </div>
+                                <img src="./assets/audio/img/Shape-Of-You-cover-by-JFla.jpg" alt="">
+                            </div>
+                            <div class="list-songs_list-item_info">
+                                <div class="list-songs_list-item_info-name">
+                                    <h3>Always remember us this way</h3>
+                                </div>
+                                <div class="list-songs_list-item_info-singer">
+                                    <h3>Lady Gaga, American</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-12 c-12 m-12">
+                        <div class="list-songs_list-item list-songs_list-item--downloaded" data-mouseOver=true>
+                            <div class="list-songs_list-item_img">
+                                <div class="list-songs_list-item_img--hover">
+                                    <i class="list-songs_list-item_img--hover-play fas fa-play"></i>
+                                    <div class="list-songs_list-item_img--hover_mode">
+                                        <div class="list-songs_list-item_img--hover_mode-item">
+                                            <div class="thumb-up">
+                                                <i class="far fa-thumbs-up"></i>
+                                                <span class="thumb-up_amount">21</span>
+                                            </div>
+                                        </div>
+                                        <div class="list-songs_list-item_img--hover_mode-item">
+                                            <i class="list-songs_list-item_img--hover_mode-item--download fas fa-download"></i>
+                                            <i class="list-songs_list-item_img--hover_mode-item--heart far fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <i class="list-songs_list-item_img--hover-see-more fas fa-ellipsis-h">
+                                        <div class="tooltip tooltip--bottom">Edit</div>
+                                    </i>
+                                </div>
+                                <img src="./assets/audio/img/Don-t-Let-Me-Down-cover-by-JFla.jpg" alt="">
+                            </div>
+                            <div class="list-songs_list-item_info">
+                                <div class="list-songs_list-item_info-name">
+                                    <h3>Always remember us </h3>
+                                </div>
+                                <div class="list-songs_list-item_info-singer">
+                                    <h3>Lady Gaga, American</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-12 c-12 m-12">
+                        <div class="list-songs_list-item list-songs_list-item--downloaded" data-mouseOver=true>
+                            <div class="list-songs_list-item_img">
+                                <div class="list-songs_list-item_img--hover">
+                                    <i class="list-songs_list-item_img--hover-play fas fa-play"></i>
+                                    <div class="list-songs_list-item_img--hover_mode">
+                                        <div class="list-songs_list-item_img--hover_mode-item">
+                                            <div class="thumb-up">
+                                                <i class="far fa-thumbs-up"></i>
+                                                <span class="thumb-up_amount">21</span>
+                                            </div>
+                                        </div>
+                                        <div class="list-songs_list-item_img--hover_mode-item">
+                                            <i class="list-songs_list-item_img--hover_mode-item--download fas fa-download"></i>
+                                            <i class="list-songs_list-item_img--hover_mode-item--heart far fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <i class="list-songs_list-item_img--hover-see-more fas fa-ellipsis-h">
+                                        <div class="tooltip tooltip--bottom">Edit</div>
+                                    </i>
+                                </div>
+                                <img src="./assets/audio/img/Don-t-Let-Me-Down-cover-by-JFla.jpg" alt="">
+                            </div>
+                            <div class="list-songs_list-item_info">
+                                <div class="list-songs_list-item_info-name">
+                                    <h3>Always remember us this way</h3>
+                                </div>
+                                <div class="list-songs_list-item_info-singer">
+                                    <h3>Lady Gaga, American</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-12 c-12 m-12">
+                        <div class="list-songs_list-item list-songs_list-item--downloaded" data-mouseOver=true>
+                            <div class="list-songs_list-item_img">
+                                <div class="list-songs_list-item_img--hover">
+                                    <i class="list-songs_list-item_img--hover-play fas fa-play"></i>
+                                    <div class="list-songs_list-item_img--hover_mode">
+                                        <div class="list-songs_list-item_img--hover_mode-item">
+                                            <div class="thumb-up">
+                                                <i class="far fa-thumbs-up"></i>
+                                                <span class="thumb-up_amount">21</span>
+                                            </div>
+                                        </div>
+                                        <div class="list-songs_list-item_img--hover_mode-item">
+                                            <i class="list-songs_list-item_img--hover_mode-item--download fas fa-download"></i>
+                                            <i class="list-songs_list-item_img--hover_mode-item--heart far fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <i class="list-songs_list-item_img--hover-see-more fas fa-ellipsis-h">
+                                        <div class="tooltip tooltip--bottom">Edit</div>
+                                    </i>
+                                </div>
+                                <img src="./assets/audio/img/Don-t-Let-Me-Down-cover-by-JFla.jpg" alt="">
+                            </div>
+                            <div class="list-songs_list-item_info">
+                                <div class="list-songs_list-item_info-name">
+                                    <h3>Always remember us this way</h3>
+                                </div>
+                                <div class="list-songs_list-item_info-singer">
+                                    <h3>Lady Gaga, American</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="song-detail-bottom">
+        
+    </div>
+</div>

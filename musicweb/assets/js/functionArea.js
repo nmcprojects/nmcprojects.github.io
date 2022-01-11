@@ -19,8 +19,8 @@ functionChildren.forEach(function (item) {
             else {
                 let itemActive = functionArea.querySelector('.function-item--active');
 
-                itemActive.classList.remove('function-item--active');
-                item.classList.add('function-item--active');
+                itemActive?.classList.remove('function-item--active');
+                item?.classList.add('function-item--active');
                 
 
                 // set interface
@@ -47,7 +47,12 @@ functionChildren.forEach(function (item) {
                 else {
 
                 }
+
+                // Close song detail if have it
+                let songDetail = document.querySelector('.song-detail');
+                songDetail.style.display = 'none';
             }
         }
     }
 })
+

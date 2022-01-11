@@ -1226,7 +1226,7 @@ const song_player = {
 
         song_audio.play();
     },
-    start: function (listSong, listSongListenedRecently, currSong) {
+    start: function (listSong, listSongListenedRecently = [], currSong = 0) {
 
         this.songs = listSong;
         this.songsListenedRecently = listSongListenedRecently;
@@ -1264,10 +1264,9 @@ class FetchData {
 
     constructor() {  }
 
-    fecth100Song(API, name_song, mode) {
+    fetch100Song(API, name_song, mode) {
         // Fetch song from Api to my web
         let idSongCurrent = 0;
-        const data = {};
         fetch(API)
         .then(response => response.json())
         .then(data => {
@@ -1322,6 +1321,57 @@ class FetchData {
         });
     }
 
+    fetchSongOther(API) {
+        // Fetch song from Api to my web
+        let idSongCurrent = 0;
+        fetch(API)
+        .then(response => response.json())
+        .then(data => {
+            // console.log(data)
+            let songs = data.songs.top100_AM[0].songs.map((song) => {
+                return {
+                    name: song.title,
+                    singer: song.creator, 
+                    favorite: true,
+                    isLike: true,
+                    amountLike: Math.round(Math.random() * 100),
+                    img: song.avatar,
+                    audio: song.music,
+                    lyric: song.lyric,
+                };
+            }, []);
+            // for(let i=0;i<songs.length;i++) {
+            //     const xhttp = new XMLHttpRequest();
+            //     data = new FormData();
+            //     data.append('action', 'ajax_decrypt');
+            //     data.append('key', 'Lyr1cjust4nct');
+            //     data.append('algo', 'arcfour');
+            //     data.append('mode', 'stream');
+            //     data.append('decode', 'checked');
+            //     data.append('decode_method', '2');
+            //     xhttp.onload = function() {
+            //         data.append('text', this.responseText);
+            //         xhttp.onload = function () {
+            //             // console.log(this.responseText);
+            //             songs[i].lyric = this.responseText;
+    
+            //         }
+                    
+            //         xhttp.open('POST', "https://www.tools4noobs.com/", true);
+            //         xhttp.send( data );
+            //     }
+            //     xhttp.open("GET", songs[i].lyric);
+            //     xhttp.send();
+            // }
+            song_player.start(songs, songs.slice(11, 22), 0);
+            // console.log(songs);
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+    }
+
+
 }
 
 
@@ -1344,12 +1394,13 @@ let songsListenedRecently = []
 
 const API_MP3 = "https://api.apify.com/v2/key-value-stores/EJ3Ppyr2t73Ifit64/records/LATEST?fbclid=IwAR21ISlfRXxd1LRBoNnQd-56xGGyj-0ODQXiS579oIsjs9zJh1mM6hc7BTE"
 
-const MY_API_MP3 = "http://localhost:8080/Music_Web/api/A%20Time%20For%20Us"
+// const MY_API_MP3 = "http://localhost:8080/Music_Web/api/A%20Time%20For%20Us"
 
 try {
     window.FetchData = new FetchData();
     
-    window.FetchData.fecth100Song(MY_API_MP3, "A%20Time%20For%20Us", 0);
+    // window.FetchData.fecth100Song(MY_API_MP3, "A%20Time%20For%20Us", 0);
+    window.FetchData.fetchSongOther(API_MP3);
 }
 catch (e) {
     console.log(e.message);
