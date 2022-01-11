@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Web</title>
+
+    <link rel="stylesheet" href="./assets/fontawesome-free-5.15.2-web/css/all.css">
+    <link rel="stylesheet" href="./assets/css/styleRegister.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/box_3d.css" type="text/css">
+</head>
+<body>
+    <div class="wrap-registration">
+        <div class="title">
+            <h1>
+                <img src="./assets/image/icon_common_interface/logo.png" alt="">
+                Music
+            </h1>
+            <p class="slogan">Music speaks to the heart in ways words can't express</p>
+        </div>
+        <div class="box-intro">
+            <div class="box-3d">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box4"></div>
+                <div class="box5"></div>
+                <div class="box6"></div>
+            </div>
+        </div>
+        <div class="LogIn form-rigister">
+            <div class="container">
+                <h3 class="titleLogin">Log <span>in</span></h3>
+                <form action="LoginController" method="post">
+                    <div class="accountName input-form input-form-Login">
+                        <input type="text" name="accountNameLogin" placeholder="Account Name"> 
+                        <div class="icon_accountName">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="password input-form input-form-Login">
+                        <input type="password" name="passwordLogin" placeholder="Password"> 
+                        <div class="icon_password">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+                    <a class="from_login_forgot_password">Forgot password?</a>
+                    <input type="submit" name="logIn" value="Log In" class="btn btnLogin">
+                    <div class="title_another_login">Or login with</div>
+                    <div class="another_login">
+                        <div class="btnLoginFace btn_another_login">
+                            <div class="icon-btnLoginFace icon-btn_another_login">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <p class="text-btnLoginFace">Facebook</p>
+                        </div>
+                        <div class="btnLoginEmail btn_another_login">
+                            <div class="icon-btnLoginEmail icon-btn_another_login">
+                                <i class="far fa-envelope"></i>
+                            </div>
+                            <p class="text-btnLoginEmail">Email</p>
+                        </div>
+                    </div>
+                    <div class="no_has_account">
+                        Don't have account?<a url="#">Signup Now</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="SignUp form-rigister">
+            <div class="container disappears">
+                <h3 class="titleSignup">Sign up <span>Now</span></h3>
+                <p class="slogan-SignUp">Music speaks to the heart in ways words can't express</p>
+                <form action="#" method="post">
+                    <div class="userName">
+                        <div class="userName-firstName input-form input-form-SignUP">
+                            <input type="text" name="userName-firstName" placeholder="First Name"> 
+                        </div>
+                        <div class="userName-lastName input-form input-form-SignUP">
+                            <input type="text" name="userName-lastName" placeholder="Last Name"> 
+                        </div>
+                    </div>
+                    <div class="accountName input-form input-form-SignUP">
+                        <input type="text" name="accountNameSignup" placeholder="Account Name"> 
+                    </div>
+                    <div class="password input-form input-form-SignUP">
+                        <input type="password" name="passwordSignup" placeholder="Password"> 
+                    </div>
+                    <div class="password password-confirm input-form input-form-SignUP">
+                        <input type="password" name="confirm-passwordSignup" placeholder="Confirm Password"> 
+                    </div>
+                    <div class="rules">
+                        <input type="checkbox" name='rules'>
+                        <p class="test-rules">I accept the <a url="#">Terms of Use</a> & <a url="#">Privacy Policy</a></p>
+                    </div>
+                    <input type="submit" name="signUp" value="Sign Up" class="btn btnSignup">
+                    <div class="title_another_login title_another_signup">Or login with</div>
+                    <div class="another_login">
+                        <div class="btnLoginFace btn_another_login btn_another_login-Signup">
+                            <div class="icon-btnLoginFace icon-btn_another_login">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <p class="text-btnLoginFace">Facebook</p>
+                        </div>
+                        <div class="btnLoginEmail btn_another_login btn_another_login-Signup">
+                            <div class="icon-btnLoginEmail icon-btn_another_login">
+                                <i class="far fa-envelope"></i>
+                            </div>
+                            <p class="text-btnLoginEmail">Email</p>
+                        </div>
+                    </div>
+                    <div class="had_account" id="had_account">
+                        Do have account?<a url="#">Login Now</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/scriptRegister.js"></script>
+</body>
+</html>

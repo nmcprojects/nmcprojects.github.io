@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Test</title>
+
+    <link rel="stylesheet" href="comment.css">
+    <!-- <link rel="stylesheet" href="./fontawesome/all.css"> -->
+    <link rel="stylesheet" href="./fontawesome-free-5.15.2-web/css/all.css">
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+        }
+
+        .wrap {
+            width: 840px;
+            height: auto;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrap" >
+        <div class="comment">
+            <div class="write-comment write-comment--default">
+                <div class="write-comment_img">
+                    <img src="./img/imageAvatar.jpg" alt="avatar">
+                </div>
+                <div class="write-comment_content">
+                    <div class="write-comment_content-top">
+                        <textarea name="comment" id="comment" rows="1" placeholder="Give me your comment"></textarea>
+                    </div>
+                    <div class="write-comment_content-bottom">
+                        <div class="write-comment_content-bottom-slogan">
+                            Hear it. See it. Live it.&#128149;
+                        </div>
+                        <div class="write-comment_content-bottom-btn">
+                            <div class="write-comment_content-bottom-btn-item" name='cancel'>
+                                Cancel
+                            </div>
+                            <div class="write-comment_content-bottom-btn-item" name='comment'>
+                                Comment
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-comments">
+                <div class="view-comment">
+                    <div class="view-comment-img">
+                        <img src="./img/imageAvatar.jpg" alt="">
+                    </div>
+                    <div class="view-comment-content">
+                        <div class="view-comment-content_content">
+                            <div class="view-comment-content_content-name">
+                                Nguyễn Mạnh Cường
+                            </div>
+                            <div class="view-comment-content_content-main">
+                                Cố gắng thêm chức năng đi bạn
+                            </div>
+                            <div class="view-comment-reactions">
+                                <div class="view-comment-reactions_icon">
+                                </div>
+                                <div class="view-comment-reactions_num">
+                                    22
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-comment-content_btn">
+                            <span class="view-comment-content_btn-item" name='liked'>Like</span>
+                            <span class="view-comment-content_btn--dot">.</span>
+                            <span class="view-comment-content_btn-item" name='reply'>Reply</span>
+                            <span class="view-comment-content_btn--dot">.</span>
+                            <span class="view-comment-content_btn-time"> several seconds ago</span>
+                            <span class="view-comment-content_btn--dot view-comment-content_btn--last-dot">.</span>
+                            <div class="view-comment-content_btn-btn">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <div class="view-comment-content_feature" value='me'>
+                                <div class="view-comment-content_feature--for-me-cmt">
+                                    <div class="view-comment-content_feature-item">
+                                        <i class="fas fa-pencil-alt"></i>
+                                        <span>Modify comment</span>
+                                    </div>
+                                    <div class="view-comment-content_feature-item">
+                                        <i class="fas fa-trash"></i>
+                                        <span>Delete comment</span>
+                                    </div>
+                                </div>
+                                <div class="view-comment-content_feature--for-other-cmt">
+                                    <div class="view-comment-content_feature-item">
+                                        <i class="fas fa-flag"></i>
+                                        <span>Comment report</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-comment-content_see-more" value='none'>
+                            <div class="view-comment-content_see-more-common view-comment-content_see-more-open">
+                                <p>View all replies</p>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="view-comment-content_see-more-common view-comment-content_see-more-close">
+                                <p>Hide answer</p>
+                                <i class="fas fa-chevron-up"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-comment">
+                    <div class="view-comment-img">
+                        <img src="./img/Darling.jpeg" alt="">
+                    </div>
+                    <div class="view-comment-content">
+                        <div class="view-comment-content_content">
+                            <div class="view-comment-content_content-name">
+                                Vũ Thu Trang
+                            </div>
+                            <div class="view-comment-content_content-main">
+                                Hát hay quá anh yêu của em ơi. &#128150;
+                                Cho em hỏi sao nó không mở bài 13 mà nó mởi bài 14 15. Trong khi em làm hết vẫn không mở bài 16 ạ 
+                            </div>
+                            <div class="view-comment-reactions">
+                                <div class="view-comment-reactions_icon">
+                                </div>
+                                <div class="view-comment-reactions_num">
+                                    4
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-comment-content_btn">
+                            <span class="view-comment-content_btn-item" name='liked'>Like</span>
+                            <span class="view-comment-content_btn--dot">.</span>
+                            <span class="view-comment-content_btn-item" name='reply'>Reply</span>
+                            <span class="view-comment-content_btn--dot">.</span>
+                            <span class="view-comment-content_btn-time">07 minutes ago</span>
+                            <span class="view-comment-content_btn--dot view-comment-content_btn--last-dot">.</span>
+                            <div class="view-comment-content_btn-btn">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <div class="view-comment-content_feature" value='other'>
+                                <div class="view-comment-content_feature--for-me-cmt">
+                                    <div class="view-comment-content_feature-item">
+                                        <i class="fas fa-pencil-alt"></i>
+                                        <span>Modify comment</span>
+                                    </div>
+                                    <div class="view-comment-content_feature-item">
+                                        <i class="fas fa-trash"></i>
+                                        <span>Delete comment</span>
+                                    </div>
+                                </div>
+                                <div class="view-comment-content_feature--for-other-cmt">
+                                    <div class="view-comment-content_feature-item">
+                                        <i class="fas fa-flag"></i>
+                                        <span>Comment report</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-comment-content_reply-cmt">
+                            <div class="write-comment write-comment--reply">
+                                <div class="write-comment_img">
+                                    <img src="./img/imageAvatar.jpg" alt="avatar">
+                                </div>
+                                <div class="write-comment_content">
+                                    <div class="write-comment_content-top">
+                                        <textarea name="comment" id="comment" rows="1" placeholder="Give me your comment"></textarea>
+                                    </div>
+                                    <div class="write-comment_content-bottom">
+                                        <div class="write-comment_content-bottom-slogan">
+                                            Hear it. See it. Live it.&#128149;
+                                        </div>
+                                        <div class="write-comment_content-bottom-btn">
+                                            <div class="write-comment_content-bottom-btn-item" name='cancel'>
+                                                Cancel
+                                            </div>
+                                            <div class="write-comment_content-bottom-btn-item" name='comment'>
+                                                Comment
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-comment-content_see-more" value='close'>
+                            <div class="view-comment-content_see-more-common view-comment-content_see-more-open">
+                                <p>View all replies</p>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="view-comment-content_see-more-common view-comment-content_see-more-close">
+                                <p>Hide answer</p>
+                                <i class="fas fa-chevron-up"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-comment-rely-wrap">
+                    <div class="view-comment view-comment--reply">
+                        <div class="view-comment-img">
+                            <img src="./img/Don-t-Let-Me-Down-cover-by-JFla.jpg" alt="">
+                        </div>
+                        <div class="view-comment-content">
+                            <div class="view-comment-content_content">
+                                <div class="view-comment-content_content-name">
+                                    JFla, Korean.
+                                </div>
+                                <div class="view-comment-content_content-main">
+                                    Vũ Thu Trang: Bạn phải yêu anh ấy rất nhiều vào nha.
+                                </div>
+                            </div>
+                            <div class="view-comment-content_btn">
+                                <span class="view-comment-content_btn-item" name='like'>Like</span>
+                                <span class="view-comment-content_btn--dot">.</span>
+                                <span class="view-comment-content_btn-item" name='reply'>Reply</span>
+                                <span class="view-comment-content_btn--dot">.</span>
+                                <span class="view-comment-content_btn-time">22 days ago</span>
+                                <span class="view-comment-content_btn--dot view-comment-content_btn--last-dot">.</span>
+                                <div class="view-comment-content_btn-btn">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </div>
+                                <div class="view-comment-content_feature" value='other'>
+                                    <div class="view-comment-content_feature--for-me-cmt">
+                                        <div class="view-comment-content_feature-item">
+                                            <i class="fas fa-pencil-alt"></i>
+                                            <span>Modify comment</span>
+                                        </div>
+                                        <div class="view-comment-content_feature-item">
+                                            <i class="fas fa-trash"></i>
+                                            <span>Delete comment</span>
+                                        </div>
+                                    </div>
+                                    <div class="view-comment-content_feature--for-other-cmt">
+                                        <div class="view-comment-content_feature-item">
+                                            <i class="fas fa-flag"></i>
+                                            <span>Comment report</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-comment-content_see-more" value='none'>
+                            <div class="view-comment-content_see-more-common view-comment-content_see-more-open">
+                                <p>View all replies</p>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="view-comment-content_see-more-common view-comment-content_see-more-close">
+                                <p>Hide answer</p>
+                                <i class="fas fa-chevron-up"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view-comment view-comment--reply">
+                        <div class="view-comment-img">
+                            <img src="./img/LetMeDownSlowly.jpg" alt="">
+                        </div>
+                        <div class="view-comment-content">
+                            <div class="view-comment-content_content">
+                                <div class="view-comment-content_content-name">
+                                    Jack Ma, China.
+                                </div>
+                                <div class="view-comment-content_content-main">
+                                    Do you want to be entrepreneur? Don’t stop when you’re tired. Stop when you’re done.
+                                    Wake up with determination. Go to bed with satisfaction.
+                                    Do something today that your future self will thank you for.
+                                </div>
+                            </div>
+                            <div class="view-comment-content_btn">
+                                <span class="view-comment-content_btn-item" name='like'>Like</span>
+                                <span class="view-comment-content_btn--dot">.</span>
+                                <span class="view-comment-content_btn-item" name='reply'>Reply</span>
+                                <span class="view-comment-content_btn--dot">.</span>
+                                <span class="view-comment-content_btn-time">11 seconds ago</span>
+                                <span class="view-comment-content_btn--dot view-comment-content_btn--last-dot">.</span>
+                                <div class="view-comment-content_btn-btn">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </div>
+                                <div class="view-comment-content_feature" value='other'>
+                                    <div class="view-comment-content_feature--for-me-cmt">
+                                        <div class="view-comment-content_feature-item">
+                                            <i class="fas fa-pencil-alt"></i>
+                                            <span>Modify comment</span>
+                                        </div>
+                                        <div class="view-comment-content_feature-item">
+                                            <i class="fas fa-trash"></i>
+                                            <span>Delete comment</span>
+                                        </div>
+                                    </div>
+                                    <div class="view-comment-content_feature--for-other-cmt">
+                                        <div class="view-comment-content_feature-item">
+                                            <i class="fas fa-flag"></i>
+                                            <span>Comment report</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-comment-content_see-more" value='none'>
+                            <div class="view-comment-content_see-more-common view-comment-content_see-more-open">
+                                <p>View all replies</p>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="view-comment-content_see-more-common view-comment-content_see-more-close">
+                                <p>Hide answer</p>
+                                <i class="fas fa-chevron-up"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-comment">
+                    <div class="view-comment-img">
+                        <img src="./img/Always-Remember-Us-This-Way.jpg" alt="">
+                    </div>
+                    <div class="view-comment-content">
+                        <div class="view-comment-content_content">
+                            <div class="view-comment-content_content-name">
+                                Lady Gaga, US
+                            </div>
+                            <div class="view-comment-content_content-main">
+                                Cường hát hay thế. &#128536;&#128536;
+                            </div>
+                        </div>
+                        <div class="view-comment-content_btn">
+                            <span class="view-comment-content_btn-item" name='like'>Like</span>
+                            <span class="view-comment-content_btn--dot">.</span>
+                            <span class="view-comment-content_btn-item" name='reply'>Reply</span>
+                            <span class="view-comment-content_btn--dot">.</span>
+                            <span class="view-comment-content_btn-time">04 hours ago</span>
+                            <span class="view-comment-content_btn--dot view-comment-content_btn--last-dot">.</span>
+                            <div class="view-comment-content_btn-btn">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <div class="view-comment-content_feature" value='other'>
+                                <div class="view-comment-content_feature--for-me-cmt">
+                                    <div class="view-comment-content_feature-item">
+                                        <i class="fas fa-pencil-alt"></i>
+                                        <span>Modify comment</span>
+                                    </div>
+                                    <div class="view-comment-content_feature-item">
+                                        <i class="fas fa-trash"></i>
+                                        <span>Delete comment</span>
+                                    </div>
+                                </div>
+                                <div class="view-comment-content_feature--for-other-cmt">
+                                    <div class="view-comment-content_feature-item">
+                                        <i class="fas fa-flag"></i>
+                                        <span>Comment report</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view-comment-content_see-more" value='none'>
+                        <div class="view-comment-content_see-more-common view-comment-content_see-more-open">
+                            <p>View all replies</p>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="view-comment-content_see-more-common view-comment-content_see-more-close">
+                            <p>Hide answer</p>
+                            <i class="fas fa-chevron-up"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-comment">
+                    <div class="view-comment-img">
+                        <img src="./img/Don-t-Let-Me-Down-cover-by-JFla.jpg" alt="">
+                    </div>
+                    <div class="view-comment-content">
+                        <div class="view-comment-content_content">
+                            <div class="view-comment-content_content-name">
+                                JFla, Korean.
+                            </div>
+                            <div class="view-comment-content_content-main">
+                                Hát hay gần bằng chị r nha em. ơi!. &#129321;
+                            </div>
+                        </div>
+                        <div class="view-comment-content_btn">
+                            <span class="view-comment-content_btn-item" name='like'>Like</span>
+                            <span class="view-comment-content_btn--dot">.</span>
+                            <span class="view-comment-content_btn-item" name='reply'>Reply</span>
+                            <span class="view-comment-content_btn--dot">.</span>
+                            <span class="view-comment-content_btn-time">11 minutes ago</span>
+                            <span class="view-comment-content_btn--dot view-comment-content_btn--last-dot">.</span>
+                            <div class="view-comment-content_btn-btn">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <div class="view-comment-content_feature" value='other'>
+                                <div class="view-comment-content_feature--for-me-cmt">
+                                    <div class="view-comment-content_feature-item">
+                                        <i class="fas fa-pencil-alt"></i>
+                                        <span>Modify comment</span>
+                                    </div>
+                                    <div class="view-comment-content_feature-item">
+                                        <i class="fas fa-trash"></i>
+                                        <span>Delete comment</span>
+                                    </div>
+                                </div>
+                                <div class="view-comment-content_feature--for-other-cmt">
+                                    <div class="view-comment-content_feature-item">
+                                        <i class="fas fa-flag"></i>
+                                        <span>Comment report</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-comment-content_see-more" value='close'>
+                            <div class="view-comment-content_see-more-common view-comment-content_see-more-open">
+                                <p>View all replies</p>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="view-comment-content_see-more-common view-comment-content_see-more-close">
+                                <p>Hide answer</p>
+                                <i class="fas fa-chevron-up"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-comment-rely-wrap">
+                    <div class="view-comment-rely">
+                        <div class="view-comment view-comment--reply">
+                            <div class="view-comment-img">
+                                <img src="./img/Take-me-to-your-heart.jpg" alt="">
+                            </div>
+                            <div class="view-comment-content">
+                                <div class="view-comment-content_content">
+                                    <div class="view-comment-content_content-name">
+                                        Bill Gates, US
+                                    </div>
+                                    <div class="view-comment-content_content-main">
+                                        I'll give you a advice: “Don't compare yourself with anyone in this world… if you do so, you are insulting yourself"
+                                    </div>
+                                </div>
+                                <div class="view-comment-content_btn">
+                                    <span class="view-comment-content_btn-item" name='like'>Like</span>
+                                    <span class="view-comment-content_btn--dot">.</span>
+                                    <span class="view-comment-content_btn-item" name='reply'>Reply</span>
+                                    <span class="view-comment-content_btn--dot">.</span>
+                                    <span class="view-comment-content_btn-time">1 seconds ago</span>
+                                    <span class="view-comment-content_btn--dot view-comment-content_btn--last-dot">.</span>
+                                    <div class="view-comment-content_btn-btn">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </div>
+                                    <div class="view-comment-content_feature" value='other'>
+                                        <div class="view-comment-content_feature--for-me-cmt">
+                                            <div class="view-comment-content_feature-item">
+                                                <i class="fas fa-pencil-alt"></i>
+                                                <span>Modify comment</span>
+                                            </div>
+                                            <div class="view-comment-content_feature-item">
+                                                <i class="fas fa-trash"></i>
+                                                <span>Delete comment</span>
+                                            </div>
+                                        </div>
+                                        <div class="view-comment-content_feature--for-other-cmt">
+                                            <div class="view-comment-content_feature-item">
+                                                <i class="fas fa-flag"></i>
+                                                <span>Comment report</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view-comment-content_see-more" value='none'>
+                                <div class="view-comment-content_see-more-common view-comment-content_see-more-open">
+                                    <p>View all replies</p>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="view-comment-content_see-more-common view-comment-content_see-more-close">
+                                    <p>Hide answer</p>
+                                    <i class="fas fa-chevron-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="comment.js"></script>
+</body>
+</html>

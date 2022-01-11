@@ -1,0 +1,86 @@
+
+.box-3d {
+
+    --size-box: 200px;
+
+    animation: animate 10s ease-in-out infinite;
+    transform-style: preserve-3d;
+    transform-origin: calc(var(--size-box) / 2) calc(var(--size-box) / 2) 0;
+}
+
+.box-3d div {
+    position: absolute;
+    width: var(--size-box);
+    height: var(--size-box);
+    line-height: var(--size-box);
+}
+
+.box-3d .box1 {
+    background-image: url(./img/box1.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    transform: translateZ(calc(var(--size-box) / 2));
+}
+
+.box-3d .box2 {
+    background-image: url(./img/box2.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    transform: rotateY(90deg) translateZ(calc(var(--size-box) / 2));
+}
+
+.box-3d .box3 {
+    background-image: url(./img/box3.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    transform: rotateY(90deg) rotateX(90deg) translateZ(calc(var(--size-box) / 2));
+}
+
+.box-3d .box4 {
+    background-image: url(./img/box4.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(calc(var(--size-box) / 2));
+}
+
+.box-3d .box5 {
+    background-image: url(./img/box5.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(calc(var(--size-box) / 2));
+}
+
+.box-3d .box6 {
+    background-image: url(./img/box6.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    transform: rotateX(-90deg) translateZ(calc(var(--size-box) / 2));
+}
+
+
+@keyframes animate {
+    from, to {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    16% {
+        transform: rotateY(-90deg);
+    }
+    33% {
+        transform: rotateY(-90deg) rotateZ(90deg);
+    }
+    50% {
+        transform: rotateY(-180deg) rotateZ(90deg);
+    }
+    66% {
+        transform: rotateY(-270deg) rotateX(90deg);
+    }
+    83% {
+        transform: rotateX(90deg);
+    }
+}

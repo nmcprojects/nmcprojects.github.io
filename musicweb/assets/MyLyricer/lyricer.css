@@ -1,0 +1,82 @@
+.lyricer {
+    --color-text: #000000;
+    --color-text-old-line: #555;
+    --color-text-current-line: red;
+    --color-text-hover: blue;
+    --color-shadow-first: #fff;
+    --color-shadow-last: #ff2d95;
+    --pos-test: left;
+    --font-size: 18px;
+    --margin: 0;
+    --padding: 8px 0;
+
+    width: 100%;
+    height: 100%;
+    text-align: var(--pos-test);
+    overflow: hidden;
+}
+
+.lyricer.lyricer--scrollbar {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.lyricer.lyricer--scrollbar::-webkit-scrollbar {
+    width: 0;
+    background-color: transparent;
+}
+
+.lyricer ul.lyricer-wrap {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lyricer ul.lyricer-wrap li.lyricer-item {
+    color: var(--color-text);
+    font-size: var( --font-size);
+    margin: var(--margin);
+    padding:var(--padding);
+}
+
+.lyricer ul.lyricer-wrap li.lyricer-item--current-line {
+    color: var(--color-text-current-line);
+    text-shadow: 0 0 1px var(--color-shadow-first),
+                 0 0 2px var(--color-shadow-first),
+                 0 0 3px var(--color-shadow-first),
+                 0 0 4px var(--color-shadow-first),
+                 0 0 6px var(--color-shadow-last), 
+                 0 0 8px var(--color-shadow-last), 
+                 0 0 10px var(--color-shadow-last), 
+                 0 0 12px var(--color-shadow-last);
+}
+
+.lyricer ul.lyricer-wrap li.lyricer-item.lyricer-item--old-line {
+    color: var(--color-text-old-line);
+}
+
+.lyricer ul.lyricer-wrap li.lyricer-item.lyricer-item--no-hover:hover {
+    cursor: default;
+    color: var(--color-text);
+}
+
+.lyricer ul.lyricer-wrap li.lyricer-item.lyricer-item--current-line.lyricer-item--no-hover:hover {
+    color: var(--color-text-current-line);
+    text-shadow: 0 0 1px var(--color-shadow-first),
+                 0 0 2px var(--color-shadow-first),
+                 0 0 3px var(--color-shadow-first),
+                 0 0 4px var(--color-shadow-first),
+                 0 0 6px var(--color-shadow-last), 
+                 0 0 8px var(--color-shadow-last), 
+                 0 0 10px var(--color-shadow-last), 
+                 0 0 12px var(--color-shadow-last);
+}
+
+.lyricer ul.lyricer-wrap li.lyricer-item:hover {
+    cursor: pointer;
+    color: var(--color-text-hover);
+}
+
+.lyricer ul.lyricer-wrap li.lyricer-item--current-line:hover {
+    color: var(--color-text-current-line);
+}

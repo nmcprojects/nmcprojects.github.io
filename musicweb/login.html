@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="./assets/fontawesome-free-5.15.2-web/css/all.css">
+    <link rel="stylesheet" href="./assets/css/login_signup.css" type="text/css">
+
+</head>
+<body>
+    <div class="wrap-registration">
+        <div class="LogIn form-register">
+            <div class="container-register">
+                <h3 class="titleLogin">Log <span>in</span></h3>
+                <form action="LoginController" method="post">
+                    <div class="accountName input-form input-form-Login">
+                        <input type="text" name="accountNameLogin" placeholder="Account Name"> 
+                        <div class="icon_accountName">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="password input-form input-form-Login">
+                        <input type="password" name="passwordLogin" placeholder="Password"> 
+                        <div class="icon_password">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+                    <a class="from_login_forgot_password">Forgot password?</a>
+                    <input type="submit" name="logIn" value="Log In" class="btn btnLogin">
+                    <div class="title_another_login">Or login with</div>
+                    <div class="another_login">
+                        <div class="btnLoginFace btn_another_login">
+                            <div class="icon-btnLoginFace icon-btn_another_login">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <p class="text-btnLoginFace">Facebook</p>
+                        </div>
+                        <div class="btnLoginEmail btn_another_login">
+                            <div class="icon-btnLoginEmail icon-btn_another_login">
+                                <i class="far fa-envelope"></i>
+                            </div>
+                            <p class="text-btnLoginEmail">Email</p>
+                        </div>
+                    </div>
+                    <div class="no_has_account">
+                        Don't have account?<a url="#">Signup Now</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

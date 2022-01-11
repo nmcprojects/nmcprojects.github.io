@@ -1,0 +1,316 @@
+/* Common */
+.personal_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    border-radius: 4px;
+    background-color: var( --color-btn);
+}
+
+.personal_btn + .personal_btn {
+    margin-left: 6px;
+}
+
+.personal_btn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.personal_btn.personal_btn--disable {
+    opacity: 0.4;
+}
+
+.personal_btn.personal_btn--disable:hover {
+    cursor: not-allowed;
+}
+
+.personal_btn.personal_btn--name {
+    padding: 0 12px;
+}
+
+.personal_btn.personal_btn--only-icon {
+    padding: 0 16px;
+}
+
+
+.personal_btn.personal_btn-message {
+    background-color: var(--color-btn-primary);
+}
+
+.personal_btn img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.personal_btn .personal_btn-icon {
+    font-size: 16px;
+    margin-right: 8px;
+    position: relative;
+}
+
+.personal_btn.personal_btn--only-icon .personal_btn-icon {
+    margin-right: 0;
+}
+
+.personal_btn span {
+    height: 36px;
+    font-size: 15px;
+    line-height: 36px;
+    color: var(--color-text);
+    white-space: nowrap;
+}
+
+.personal_btn-icon_expand {
+    position: absolute;
+    top: 1px;
+    left: 13px;
+    font-size: 7px;
+    color: var(--color-text);
+
+}
+
+/* Personal are other people */
+.personal-other-people {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: calc(var( --height-search) + 16px);
+    bottom: calc(var(--height-current-song) + 16px);
+    left: calc(var(--width-function) + 16px);
+    right: calc(var(--width-friends) + 16px);
+    background-color: var(--color-background-primary);
+    border: 5px solid #555;
+}
+
+.personal-other-people .personal {
+    display: flex;
+}
+
+/* Personal */
+.personal {
+    width: 100%;
+    height: auto;
+    display: flex;
+    color: var(--color-text);
+    padding: 8px;
+    background-color: var(--color-background-shadow-light); 
+
+}
+
+.personal_info {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        /* box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.4);
+        background-color: var(--color-shadow); */
+}
+
+.personal_info-avatar {
+    position: relative;
+    width: 60%;
+    padding-top: 60%;
+    margin: 32px 0;
+}
+
+.personal_info-avatar img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.4);
+}
+
+.personal_info-avatar img:hover {
+    cursor: pointer;
+}
+
+.personal_info-avatar h4 {
+    position: absolute;
+    display: block;
+    text-align: center;
+    top: calc(100% + 12px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    font-size: 20px;
+}
+
+.personal_info-amount {
+    margin-top: 16px;
+}
+
+.personal_info-amount-item {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0 16px;
+    padding-top: 4px;
+}
+
+.personal_info-amount-item h5 {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--color-text);
+}
+
+.personal_info-amount-item span {
+
+}
+
+.personal_info-else {
+    padding: 32px 0;
+    width: 100%;
+    flex: 1;
+}
+
+.personal_info-else-btn  {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    /* justify-content: space-between; */
+    justify-content: center
+}
+
+.personal_info-else-advertisement {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0;
+}
+
+.personal_info-else-advertisement img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.personal_main {
+    width: 70%;
+    padding-left: 8px;
+}
+
+.personal_main-info {
+    /* height: 270px; */
+    width: 100%;
+    /* box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
+    background-color: var(--color-shadow); */
+    margin-bottom: 8px;
+    margin-top: 32px;
+}
+
+.personal_main-info_base {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.personal_main-info_base-item-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+
+}
+
+.personal_main-info_base-item-title_name {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.personal_main-info_base-item-title_see-more {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--color-btn-primary);
+}
+
+.personal_main-info_base-item-title_see-more:hover {
+    cursor: pointer;
+}
+
+
+.personal_main-info_base-info {
+    width: 50%;
+    background-color: var(--color-background-shadow); 
+    border-radius: 8px;
+    margin-right: 8px;
+    padding: 10px;
+}
+
+.personal_main-info_base-info_title {
+
+}
+
+.personal_main-info_base-info-item {
+    display: flex;
+    /* align-items: center; */
+    padding: 3px 0;
+    font-size: 16px;
+}
+
+.personal_main-info_base-info-item img {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+.personal_main-info_base-info-item i {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+    margin-right: 10px;
+    text-align: center
+}
+
+.personal_main-info_base-info-item span {
+    padding-left: 6px;
+}
+ 
+
+
+.personal_main-info_base-slogan {
+    width: 50%;
+    margin-left: 8px;
+    border-radius: 8px;
+    background-color: var(--color-background-shadow); 
+    padding: 10px;
+
+}
+
+.personal_main-info_friends {
+    width: 100%;
+}
+
+
+
+
+.personal_main-songs {
+    /* height: 250px; */
+    width: 100%;
+    /* box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1); */
+    /* background-color: var(--color-shadow); */
+    margin-top: 20px;
+}
+
+.personal_main-songs-title {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: var(--color-text);
+    padding-left: 20px;
+    padding-bottom: 8px;
+    font-weight: 700;
+}
+
+.personal_main-songs-list {
+    width: 100%;
+}
