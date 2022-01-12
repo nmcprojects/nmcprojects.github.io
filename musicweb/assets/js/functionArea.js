@@ -29,30 +29,73 @@ functionChildren.forEach(function (item) {
                 let personal = document.querySelector('.personal');
                 let home = document.querySelector('.home');
                 let listSong = document.querySelector('.list-songs');
-                if(featureItem == 'personal') {
-                    personal.style.display = 'flex';
-                    home.style.display = 'none';
-                    listSong.style.display = 'none';
-                }
-                else if(featureItem == 'home') {
-                    personal.style.display = 'none';
-                    home.style.display = 'block';
-                    listSong.style.display = 'none';
-                }
-                else if(featureItem == 'list_song') {
-                    personal.style.display = 'none';
-                    home.style.display = 'none';
-                    listSong.style.display = 'block';
-                }
-                else {
+                let loader = document.querySelector('.main-loader');
 
-                }
+                loader.style.display = 'flex';
+                personal.style.display = 'none';
+                home.style.display = 'none';
+                listSong.style.display = 'none';
+
+                setTimeout(function() {
+                    loader.style.display = 'none';
+
+                    if(featureItem == 'personal') {
+                        personal.style.display = 'flex';
+                        home.style.display = 'none';
+                        listSong.style.display = 'none';
+                    }
+                    else if(featureItem == 'home') {
+                        personal.style.display = 'none';
+                        home.style.display = 'block';
+                        listSong.style.display = 'none';
+                    }
+                    else if(featureItem == 'list_song') {
+                        personal.style.display = 'none';
+                        home.style.display = 'none';
+                        listSong.style.display = 'block';
+                    }
+                    else {
+    
+                    }
+                }, 1000)
+
 
                 // Close song detail if have it
                 let songDetail = document.querySelector('.song-detail');
                 songDetail.style.display = 'none';
             }
+
+            // Close if in mobile mode
+            const btnCloseMenu = document.querySelector('.function .logo .close-function')
+            if(btnCloseMenu && window.innerWidth < 768) {
+                btnCloseMenu.click();
+            }
         }
     }
 })
 
+
+
+function clickOpenMenu() {
+    const func = document.querySelector('.function');
+    func.style.transform = 'translateX(0px)';
+}
+
+function clickCloseMenu() {
+    const func = document.querySelector('.function');
+    func.style.transform = 'translateX(calc(0px - var(--width-function)))';
+}
+
+window.addEventListener ("resize", () => {
+    const btnMenu = document.querySelector('.logo.logo-search .menu');
+    const btnCloseMenu = document.querySelector('.function .logo .close-function')
+
+    if(window.innerWidth >= 768) {
+        btnCloseMenu.removeEventListener('click', clickCloseMenu)
+        btnMenu.click()
+        btnMenu.removeEventListener('click', clickOpenMenu)
+    } else {
+        btnCloseMenu.addEventListener('click', clickCloseMenu)
+        btnMenu.addEventListener('click', clickOpenMenu)
+    }
+});

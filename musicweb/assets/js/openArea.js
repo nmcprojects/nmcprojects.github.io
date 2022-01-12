@@ -91,3 +91,10 @@ if(notifyBtn && notifyArea) {
     openArea.addElement(notifyBtn, notifyArea, false);
 }
 
+// see more in controller song area
+const seeMoreBtn = $('.info-song_mode-see-more');
+const seeMOreArea = $('.info-song_mode-see-more_main');
+if(seeMoreBtn && seeMOreArea) {
+    openArea.addElement(seeMoreBtn, seeMOreArea, false);
+}
+
