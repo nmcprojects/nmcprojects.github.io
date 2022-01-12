@@ -4400,10 +4400,21 @@
             let listSong = document.querySelector('.list-songs');
             let songDetail = document.querySelector('.song-detail');
 
+            let loader = document.querySelector('.main-loader');
+
+            loader.style.display = 'flex';
             personal.style.display = 'none';
             home.style.display = 'none';
             listSong.style.display = 'none';
-            songDetail.style.display = 'block';
+            songDetail.style.display = 'none';
+
+            setTimeout(function() {
+                loader.style.display = 'none';
+                personal.style.display = 'none';
+                home.style.display = 'none';
+                listSong.style.display = 'none';
+                songDetail.style.display = 'block';
+            }, 1000)
 
             let functionItems = document.querySelectorAll('.function-item');
 
