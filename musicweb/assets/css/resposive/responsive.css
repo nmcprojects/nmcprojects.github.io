@@ -144,6 +144,12 @@
     .song-detail-center_comment {
         padding: 12px 16px;
     }
+
+    .view-comment, 
+    .write-comment {
+        margin-right: 16px;
+    }
+
 }
 
 /* Tablet: between 768px and 1112px */
