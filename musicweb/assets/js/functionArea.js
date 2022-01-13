@@ -99,3 +99,6 @@ window.addEventListener ("resize", () => {
         btnMenu.addEventListener('click', clickOpenMenu)
     }
 });
+
+document.querySelector('.function .logo .close-function').addEventListener('click', clickCloseMenu)
+document.querySelector('.logo.logo-search .menu').addEventListener('click', clickOpenMenu)

@@ -2,15 +2,21 @@
 
 /* Big PC: upper 1248px */
 /* Medium PC: between 1112px and 1248px */
-@media (min-width: 1112px) and (max-width: 1248px) {
+@media (min-width: 1112px) and (max-width: 1268px) {
     :root {
-        --width-function: 240px; /* 280 */
+        --width-function: 208px; /* 280 */
+    }
+
+    /* personal page */
+    .personal_btn-friend {
+        display: none;
     }
 }
 
 
 /* Tablet and Mobile: under 1112px */
-@media (max-width: 1111px) {
+@media (max-width: 1112px) {
+
     .list-songs_list-other {
         display: none;
     }
@@ -65,11 +71,71 @@
         margin-left: 0;
     }
 
+    /* personal page */
+    .personal_btn-friend {
+        display: none;
+    }
 
+
+    /* Personal */
+    .personal {
+        flex-direction: column;
+    }
+    
+    .personal_info {
+        display: grid;
+        grid-template-areas: "x a a b b"
+                             "x a a c c";
+        width: 100%;
+    }
+
+    .personal_info-avatar {
+        grid-area: a;
+        width: 90%;
+        padding-top: 90%;
+    }
+
+    .personal-amount-name {
+        padding: 0 16px;
+        margin-bottom: 8px;
+        padding-top: 24px;
+    }
+
+    .personal_info-amount {
+        grid-area: b;
+        margin-bottom: -20px;
+    }
+
+    .personal_info-amount .personal_info-amount-item h5 {
+        color: var(--color-text-light);
+    }
+
+    .personal_info-else {
+        grid-area: c;
+        padding-left:  16px;
+    }
+
+    .personal_info-else-btn {
+        justify-content: start;
+    }
+
+     .personal_btn-friend {
+        display: block;
+    }
+
+    .personal_info-else-advertisement {
+        display: none;
+    }
+
+
+
+    .personal_main {
+        width: 100%;
+    }
 }
 
 /* Tablet: between 768px and 1112px */
-@media (min-width: 768px) and (max-width: 1111px) {
+@media (min-width: 768px) and (max-width: 1112px) {
     :root {
         --width-function: 80px; /* 280 */
     }
@@ -150,7 +216,7 @@
 
 
 /* Mobile phone: under 768px */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     :root {
         /* --height-search: 120px;  */
     }
@@ -275,7 +341,94 @@
     .extend-song_full-songs {
         margin-left: 6px;
     }
+
+        /* Song List */
+    .song-list {
+        padding: 12px;
+    }
+
+    .song-list_info {
+        flex-direction: column;
+    }
+
+    .song-list_info-img {
+        min-width: 128px;
+        min-height: 128px;
+        margin-bottom: 4px;
+    }
+
+    .song-list_info-info {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 2px 4px;
+        width: auto;
+    }
+
+    .song-list_info-info_name {
+        width: 128px;
+        font-size: 16px;
+        margin-bottom: 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .song-list_info-info_explain {
+        font-size: 12px;
+    }
+
+    .song-list_info-info_amount {
+        position: absolute;
+        bottom: 0px;
+        font-size: 11px;
+    }
+
+    .song-list_list  {
+        flex: 1;
+        padding-left: 6px;
+        border-left: 1px solid var(--color-text);
+    }
+
+    .song-order_info-name {
+        width: auto;
+        max-width: 348px;
+    }
+
 }
+
+@media (max-width: 628px){
+
+    .personal_info {
+        grid-template-areas: "a a a a b"
+                             "a a a a c";
+    }
+
+    .personal_info-amount {
+        margin-bottom: 6px;
+    }
+
+    .personal_info-else {
+        padding: 0;
+    }
+
+    .personal_info-else-btn {
+        flex-direction: column;
+    }
+
+    .personal_btn {
+        display: flex;
+        width: 100%;
+        margin: 0 !important;
+        margin-bottom: 6px !important;
+        justify-content: center;
+    }
+
+    .song-order_info-name {
+        width: 280px;
+    }
+}
+
 
 @media (max-width: 534px) {
 
@@ -296,8 +449,34 @@
     .control-song_time-song {
         display: none;
     }
+
+    .song-list_info-img {
+        min-width: 108px;
+        min-height: 108px;
+    }
+
+    .song-list_info-info_name {
+        width: 108px;
+
+    }
+
+    .song-order_info-name {
+        max-width: 200px;
+    }
 }
 
-@media (max-width: 427px) {
+@media (max-width: 438px) {
+    .song-list_info-img {
+        min-width: 98px;
+        min-height: 98px;
+    }
 
+    .song-list_info-info_name {
+        width: 98px;
+
+    }
+
+    .song-order_info-name {
+        max-width: 180px;
+    }
 }
