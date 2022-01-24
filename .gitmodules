@@ -1,3 +1,6 @@
 [submodule "react/todo-list-1"]
 	path = react/todo-list-1
 	url = https://github.com/nmcprojects/react-todo-list-1.git
+[submodule "static-web/digital-wallet-dashboard"]
+	path = static-web/digital-wallet-dashboard
+	url = https://github.com/NguyenManhCuongKawoa/digital-wallet-dashboard.git

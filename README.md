@@ -8,8 +8,12 @@
 ## 2) Todo List 1 - React App
   - link here: [https://nmcprojects.github.io/react/todo-list-1](https://nmcprojects.github.io/react/todo-list-1)
   - link github: [https://github.com/nmcprojects/react-todo-list-1/tree/7d6fa673505e2ab658be47cbbce398f31d0ae7f5](https://github.com/nmcprojects/react-todo-list-1/tree/7d6fa673505e2ab658be47cbbce398f31d0ae7f5)
+
+## 3) Digital Wallet Dashboard - HTML CSS JAVASCRIPT
+  - link here: [https://nmcprojects.github.io/static-web/digital-wallet-dashboard](https://nmcprojects.github.io/static-web/digital-wallet-dashboard)
+  - link github: [https://github.com/NguyenManhCuongKawoa/digital-wallet-dashboard.git](https://github.com/NguyenManhCuongKawoa/digital-wallet-dashboard.git)
   
-## 3) Glassmorphism List Hover Effects - HTML CSS JAVASCRIPT
+## 4) Glassmorphism List Hover Effects - HTML CSS JAVASCRIPT
   - link here: [https://nmcprojects.github.io/GlassmorphismListHoverEffects](https://nmcprojects.github.io/GlassmorphismListHoverEffects)
   - link github: [https://github.com/nmcprojects/nmcprojects.github.io/tree/main/GlassmorphismListHoverEffects](https://github.com/nmcprojects/nmcprojects.github.io/tree/main/GlassmorphismListHoverEffects)
 
