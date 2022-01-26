@@ -15,7 +15,7 @@
 
 ## 4) Clone Web Airbnb - HTML CSS JAVASCRIPT
   - link here: [https://nmcprojects.github.io/static-web/clone-web-airbnb](https://nmcprojects.github.io/static-web/clone-web-airbnb)
-  - link github: [https://github.com/nmcprojects/Clone-Web-Airbnb.git](https://github.com/nmcprojects/Clone-Web-Airbnb.git)
+  - link github: [https://github.com/nmcprojects/clone-web-airbnb.git](https://github.com/nmcprojects/clone-web-airbnb.git)
   
 ## 5) Glassmorphism List Hover Effects - HTML CSS JAVASCRIPT
   - link here: [https://nmcprojects.github.io/GlassmorphismListHoverEffects](https://nmcprojects.github.io/GlassmorphismListHoverEffects)
