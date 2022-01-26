@@ -7,3 +7,6 @@
 [submodule "static-web/Clone-Web-Airbnb"]
 	path = static-web/Clone-Web-Airbnb
 	url = https://github.com/nmcprojects/Clone-Web-Airbnb.git
+[submodule "static-web/clone-web-airbnb"]
+	path = static-web/clone-web-airbnb
+	url = https://github.com/nmcprojects/clone-web-airbnb.git
