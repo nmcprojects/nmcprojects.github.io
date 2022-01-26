@@ -4,3 +4,6 @@
 [submodule "static-web/digital-wallet-dashboard"]
 	path = static-web/digital-wallet-dashboard
 	url = https://github.com/NguyenManhCuongKawoa/digital-wallet-dashboard.git
+[submodule "static-web/Clone-Web-Airbnb"]
+	path = static-web/Clone-Web-Airbnb
+	url = https://github.com/nmcprojects/Clone-Web-Airbnb.git
