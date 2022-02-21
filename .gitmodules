@@ -10,3 +10,9 @@
 [submodule "static-web/clone-web-airbnb"]
 	path = static-web/clone-web-airbnb
 	url = https://github.com/nmcprojects/clone-web-airbnb.git
+[submodule "react/quizzical-app"]
+	path = react/quizzical-app
+	url = https://github.com/nmcprojects/quizzical-app.git
+[submodule "quizzical-app"]
+	path = quizzical-app
+	url = https://github.com/nmcprojects/quizzical-app.git
