@@ -16,3 +16,6 @@
 [submodule "quizzical-app"]
 	path = quizzical-app
 	url = https://github.com/nmcprojects/quizzical-app.git
+[submodule "react/photo-gallery"]
+	path = react/photo-gallery
+	url = https://github.com/nmcprojects/photo-gallery.git
