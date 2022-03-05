@@ -7,7 +7,7 @@
 - link here: [https://nmcprojects.github.io/musicweb](https://nmcprojects.github.io/musicweb)
 - link github: [https://github.com/nmcprojects/nmcprojects.github.io/tree/main/musicweb](https://github.com/nmcprojects/nmcprojects.github.io/tree/main/musicweb)
 
-## 2) Quizzical App - React App
+## 2) Photo Gallery App - React App - Firebase
 
 - link here: [https://nmcprojects.github.io/react/photo-gallery](https://nmcprojects.github.io/react/photo-gallery)
 - link github: [https://github.com/nmcprojects/photo-gallery](https://github.com/nmcprojects/photo-gallery)
