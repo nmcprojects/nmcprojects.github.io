@@ -19,3 +19,6 @@
 [submodule "react/photo-gallery"]
 	path = react/photo-gallery
 	url = https://github.com/nmcprojects/photo-gallery.git
+[submodule "react/big-ecommerce"]
+	path = react/big-ecommerce
+	url = https://github.com/NguyenManhCuongKawoa/big-ecommerce.git
