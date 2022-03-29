@@ -12,6 +12,14 @@
 - link here: [https://nmcprojects.github.io/react/big-ecommerce](https://nmcprojects.github.io/react/big-ecommerce)
 - link github: [https://github.com/nmcprojects/big-ecommerce](https://github.com/nmcprojects/big-ecommerce)
 
+## ✦ About us page - HTML - CSS - JavaScript - JSF
+
+- link here: [https://arcade.bitel.com.pe/conoce-mas](https://arcade.bitel.com.pe/conoce-mas)
+- Description:
+  - Combined with old code.
+  - Code according to customer's request.
+  - Using design of customer: https://app.zeplin.io
+
 ## ✦ Photo Gallery App - React App - Firebase
 
 - link here: [https://nmcprojects.github.io/react/photo-gallery](https://nmcprojects.github.io/react/photo-gallery)
