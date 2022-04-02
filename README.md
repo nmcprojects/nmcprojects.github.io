@@ -7,7 +7,7 @@
 - link here: [https://nmcprojects.github.io/musicweb](https://nmcprojects.github.io/musicweb)
 - link github: [https://github.com/nmcprojects/nmcprojects.github.io/tree/main/musicweb](https://github.com/nmcprojects/nmcprojects.github.io/tree/main/musicweb)
 
-## ✦ Big Ecommerce - React App - Scss
+## ✦ Big Ecommerce - React App - Scss - Tailwind (some components)
 
 - link here: [https://nmcprojects.github.io/react/big-ecommerce](https://nmcprojects.github.io/react/big-ecommerce)
 - link github: [https://github.com/nmcprojects/big-ecommerce](https://github.com/nmcprojects/big-ecommerce)
