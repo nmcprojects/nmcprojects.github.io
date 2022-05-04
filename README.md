@@ -10,7 +10,7 @@
 ## ✦ Big Ecommerce - React App - Scss - Tailwind (some components)
 
 - link here: [https://nmcprojects.github.io/react/big-ecommerce](https://nmcprojects.github.io/react/big-ecommerce)
-- link github: [https://github.com/nmcprojects/big-ecommerce](https://github.com/nmcprojects/big-ecommerce)
+- link github: [https://github.com/nguyenmanhcuongkawoa/big-ecommerce](https://github.com/nguyenmanhcuongkawoa/big-ecommerce)
 
 ## ✦ About us page - HTML - CSS - JavaScript - JSF
 
